@@ -11,3 +11,37 @@
     min-height: 100vh;
   }
 }
+
+.img-fluid {
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+figure {
+overflow: hidden;
+position: relative;
+background: black;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+  color: white;
+  transform: translateY(100px);
+}
+
+
+figure:hover figcaption {
+  transform: translateY(0px);
+  transition: 1s;
+}
+
+.img-effect:hover {
+  transform: scale(1.3);
+  opacity: 0.3;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
